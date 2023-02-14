@@ -18,8 +18,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   locales: {
     '/': {
       lang: 'zh-CN',
-      title: "Evan's blog",
-      description: 'web前端技术博客,专注web前端学习与总结。JavaScript,js,ES6,TypeScript,vue,React,python,css3,html5,Node,git,github等技术文章。',
+      title: "默染星辰云水间",
+      description: '一个程序员的博客,专注个人成长、职业规划。',
     }
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
@@ -30,7 +30,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     nav: [
       { text: '首页', link: '/' },
       {
-        text: '前端',
+        text: 'Java',
         link: '/web/', //目录页链接，此处link是vdoing主题新增的配置项，有二级导航时，可以点击一级导航跳到目录页
         items: [
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
@@ -69,7 +69,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '页面',
+        text: '数据库',
         link: '/ui/',
         items: [
           { text: 'HTML', link: '/pages/8309a5b876fc95e3/' },
@@ -77,7 +77,57 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       {
-        text: '技术',
+        text: 'Spring',
+        link: '/technology/',
+        items: [
+          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
+          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
+          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
+          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+        ],
+      },
+      // {
+      //   text: '开发',
+      //   link: '/technology/',
+      //   items: [
+      //     { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
+      //     { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
+      //     { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
+      //     { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+      //   ],
+      // },
+      // {
+      //   text: '中间件｜框架',
+      //   link: '/technology/',
+      //   items: [
+      //     { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
+      //     { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
+      //     { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
+      //     { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+      //   ],
+      // },
+      {
+        text: '架构',
+        link: '/technology/',
+        items: [
+          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
+          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
+          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
+          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+        ],
+      },
+      {
+        text: '阅读',
+        link: '/technology/',
+        items: [
+          { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
+          { text: 'GitHub技巧', link: '/pages/4c778760be26d8b3/' },
+          { text: 'Nodejs', link: '/pages/117708e0af7f0bd9/' },
+          { text: '博客搭建', link: '/pages/41f87d890d0a02af/' },
+        ],
+      },
+      {
+        text: '产品|团队',
         link: '/technology/',
         items: [
           { text: '技术文档', link: '/pages/9a7ee40fc232253e/' },
@@ -90,6 +140,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         text: '更多',
         link: '/more/',
         items: [
+          { text: '工具', link: '/pages/baaa02/' },
           { text: '学习', link: '/pages/f2a556/' },
           { text: '面试', link: '/pages/aea6571b7a8bae86/' },
           { text: '心情杂货', link: '/pages/2d615df9a36a98ed/' },
@@ -98,15 +149,15 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         ],
       },
       { text: '关于', link: '/about/' },
-      {
-        text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
-        // items: [
-        //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
-        //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
-        //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
-        // ],
-      },
+      // {
+      //   text: '收藏',
+      //   link: '/pages/beb6c0bd8a66cea6/',
+      //   // items: [
+      //   //   { text: '网站', link: '/pages/beb6c0bd8a66cea6/' },
+      //   //   { text: '资源', link: '/pages/eee83a9211a70f9d/' },
+      //   //   { text: 'Vue资源', link: '/pages/12df8ace52d493f6/' },
+      //   // ],
+      // },
       {
         text: '索引',
         link: '/archives/',
@@ -166,15 +217,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 文章默认的作者信息，(可在md文件中单独配置此信息) string | {name: string, link?: string}
     author: {
-      name: 'xugaoyi', // 必需
+      name: 'zhaowenxiao', // 必需
       link: 'https://github.com/xugaoyi', // 可选的
     },
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: 'https://fastly.jsdelivr.net/gh/xugaoyi/image_store/blog/20200103123203.jpg',
-      name: 'Evan Xu',
-      slogan: '前端界的小学生',
+      avatar: 'https://oss.yncce.cn/gtst/20230214/5ae06826d25746fbbd50060b47fdbdc8.jpg',
+      //avatar: 'https://oss.yncce.cn/gtst/20230214/94c13985dbbb410f8dd4d2406bdda740.jpg',
+      name: '默染星辰',
+      slogan: '技术、管理、摄影、短视频',
     },
 
     // 社交图标 (显示于博主信息栏和页脚栏。内置图标：https://doc.xugaoyi.com/pages/a20ce8/#social)
@@ -184,12 +236,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         {
           iconClass: 'icon-youjian',
           title: '发邮件',
-          link: 'mailto:894072666@qq.com',
+          link: 'mailto:957915339@qq.com',
         },
         {
           iconClass: 'icon-github',
           title: 'GitHub',
-          link: 'https://github.com/xugaoyi',
+          link: 'https://github.com/QingShaoXi',
         },
         {
           iconClass: 'icon-erji',
@@ -203,14 +255,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     footer: {
       createYear: 2019, // 博客创建年份
       copyrightInfo:
-        'Evan Xu | <a href="https://github.com/xugaoyi/vuepress-theme-vdoing/blob/master/LICENSE" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
+        'Mo Ran | <a href="https://github.com/QingShaoXi/vuepress-blog" target="_blank">MIT License</a>', // 博客版权信息、备案信息等，支持a标签或换行标签</br>
     },
 
     // 扩展自动生成frontmatter。（当md文件的frontmatter不存在相应的字段时将自动添加。不会覆盖已有的数据。）
     extendFrontmatter: {
       author: {
-        name: 'xugaoyi',
-        link: 'https://github.com/xugaoyi'
+        name: 'QingShaoXi',
+        link: 'https://github.com/QingShaoXi'
       }
     },
 
